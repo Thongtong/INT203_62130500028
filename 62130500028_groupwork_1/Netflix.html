@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://unpkg.com/tailwindcss@1.7.0/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/vue@next"></script>
+
+
+</head>
+
+<body>
+  <div class="min-h-screen bg-black">
+
+    <!-- navbar -->
+    <div class="flex flex-col w-full pin-l pin-y ">
+      <nav class="bg-black text-white flex items-center justify-between flex-wrap w-full h-20 uppercase fixed z-20">
+
+        <div class="flex-shrink-0 flex items-center mx-6"><a href="https://www.netflix.com/th-en/">
+            <img class="block h-12 w-auto" src="images/netfilx-icon.jpg" alt="riot"></a>
+        </div>
+
+        <div class="block lg:hidden">
+          <button
+            class="flex items-center px-3 py-2 border rounded text-teal-lighter border-teal-light hover:text-white hover:border-white">
+            <svg class="h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto ">
+          <div class="text-sm lg:flex-grow">
+            <a href=""
+              class="block mt-4 lg:inline-block lg:mt-0  hover:text-white text-lg text-white px-3 py-2 rounded-md text-xs font-medium  mr-6 tracking-wide flex items-center mr-1 ">
+              รายการทีวี
+            </a>
+            <a href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0  hover:text-white  text-lg text-white px-3 py-2 rounded-md text-xs font-medium   mr-6 tracking-wide flex items-center">
+              ภาพยนต์
+            </a>
+            <a href="#responsive-header"
+              class="block mt-4 lg:inline-block lg:mt-0  hover:text-white  text-lg  text-white px-3 py-2 rounded-md text-xs font-medium   mr-6 tracking-wide flex items-center">
+              เพิ่มใหม่ล่าสุด
+            </a>
+
+            <a href=""
+              class="block mt-4 lg:inline-block lg:mt-0  hover:text-white  text-lg text-white px-3 py-2 rounded-md text-xs font-medium   mr-6 tracking-wide flex items-center">
+              รายการของฉัน
+            </a>
+
+          </div>
+          <div
+            class=" md:ml-auto hidden lg:flex flex-wrap space-x-6 items-center text-base justify-center font-semibold mr-6">
+            <img class="w-6 h-6" src="images/baseline_cast_white_18dp.png"></img>
+            <svg class="w-6 h-6 font-bold" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <button class="flex items-center mr-10">
+            <img class="w-10 h-10" src="images/user.jpg" alt="">
+            <svg class="w-5 h-5 stroke-current text-white" fill="currentColor" viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+    <div class="w-full h-screen relative">
+      <div class="absolute w-full h-full z-10 ">
+        <div class="px-16  h-full flex items-center justify-start">
+          <div class="hidden lg:flex flex-col w-2/5 space-y-4 py-12 ">
+            <img src="images/strat-up-name.png" alt="">
+            <p class="text-lg text-white">นักธุรกิจรุ่นใหม่พยายามทำความเสมือนให้กลายเป็นความจริง
+              พวกเขาต้องต่อสู้เพื่อความสำเร็จและความรักในโลกธุรกิจไฮเทคสุดโหดของเกาหลีใต้โหดของเกาหลีใต้
+            </p>
+            <div class="flex space-x-4 flex-row w-full">
+              <button
+                class=" px-3 mt-5 items-center shadow-md rounded-lg bg-white  space-x-2 py-2 justify-center flex w-32">
+                <img class="w-6 h-6" src="images/play.png" alt="">
+                <span class="text-gray-800 font-semibold">เล่น</span>
+              </button>
+              <button
+                class=" px-3 mt-5 items-center shadow-md rounded-lg bg-gray-500 bg-opacity-50  space-x-2 py-2 justify-center flex w-auto">
+                <img class="w-6 h-6" src="images/add.png" alt="">
+                <span class="text-white font-semibold">รายการของฉัน</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative   bg-center mt-0 absolute" style="height: 960px; background-image:url(images/StratUpBg.jpg)">
+      </div>
+      <div class="absolute w-full h-64 bottom-0 bg-gradient-to-t from-black "></div>
+      <div class="absolute w-full h-screen bottom-0 bg-gradient-to-t from-black "></div>
+    </div>
+  </div>
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------- -->
+  <div class="news h-screen w-full bg-black ">
+    <p class="text-3xl text-white ml-5">รายการทีวี
+    </p>
+    <ul id="รายการทีวี" class="grid grid-cols-9 gap-5 ">
+      <li>
+        <img class="w-auto ml-2 " src="movie_img/1_1.jpg" />
+      </li>
+      <li>
+        <img class="w-auto ml-2" src="movie_img/1_2.jpg" />
+      </li>
+      <li>
+        <img class="w-auto ml-2 " src="movie_img/1_3.jpg" />
+      </li>
+      <li>
+        <img class="w-auto ml-2" src="movie_img/1_4.jpg" />
+      </li>
+      <li>
+        <img class="w-auto ml-2" src="movie_img/1_5.jpg" />
+      </li>
+      <li>
+        <img class="w-auto ml-2 " src="movie_img/1_6.jpg" />
+      </li>
+      <li>
+        <img class="w-auto ml-2 " src="movie_img/1_7.jpg" />
+      </li>
+      <li>
+        <img class="w-auto ml-2 " src="movie_img/1_8.jpg" />
+      </li>
+      <li>
+        <img class="w-auto ml-2 " src="movie_img/1_9.jpg" />
+      </li>
+    </ul><br>
+      <p class="text-3xl text-white ml-3">ดูต่อสำหรับ Petch
+      </p>
+        <ul id="รายการทีวี" class="grid grid-cols-6 gap-5 ">
+          <li>
+            <img class="w-auto ml-2 " src="movie_img/2_1.jpg" />
+          </li>
+          <li>
+            <img class="w-auto ml-2" src="movie_img/2_2.jpg" />
+          </li>
+          <li>
+            <img class="w-auto ml-2 " src="movie_img/2_3.jpg" />
+          </li>
+          <li>
+            <img class="w-auto ml-2" src="movie_img/2_4.jpg" />
+          </li>
+          <li>
+            <img class="w-auto ml-2" src="movie_img/2_5.jpg" />
+          </li>
+          <li>
+            <img class="w-auto ml-2 " src="movie_img/2_6.jpg" />
+          </li>
+         
+        </ul><br>
+        <p class="text-3xl text-white ml-3">รายการของฉัน
+        </p>
+          <ul id="รายการทีวี" class="grid grid-cols-9 gap-5 ">
+            <li>
+              <img class="w-auto ml-2 " src="movie_img/1_5.jpg" />
+            </li>
+            <li>
+              <img class="w-auto ml-2" src="movie_img/1_9.jpg" />
+            </li>
+            <li>
+              <img class="w-auto ml-2 " src="movie_img/1_3.jpg" />
+            </li>
+            <li>
+              <img class="w-auto ml-2" src="movie_img/1_4.jpg" />
+            </li>
+          </ul><br>
+     
+
+    
+  </div>
+  
+</body>
+
+</html>
